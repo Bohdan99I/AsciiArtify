@@ -50,7 +50,7 @@
 
 ## Демонстрація
 
-Demo link: https://monosnap.com/file/ZGnp7WeVLOcKA0MnsEaK9xoJ1mxPPI
+Demo link: https://monosnap.com/file/QgV8HLoMOaJ8FRvKzWgtmkeJXc2eSP
 
 # Висновки
 
@@ -62,6 +62,11 @@ Demo link: https://monosnap.com/file/ZGnp7WeVLOcKA0MnsEaK9xoJ1mxPPI
 
 ## Рекомендація:
 
-Для AsciiArtify я рекомендую використовувати kind. kind - це легкий, швидкий та гнучкий інструмент, який добре підходить для локальної розробки. Він також має достатню зрілість та документацію, щоб відповідати потребам AsciiArtify.
+Я рекомендую AsciiArtify розпочати з minikube. Це простий у використанні інструмент, який допоможе їм швидко розпочати роботу. Коли вони будуть краще знайомі з Kubernetes, вони можуть перейти на kind або k3d, якщо їм потрібні додаткові функції.
+
+### Ось деякі ресурси, які допоможуть вам розпочати роботу:
+
+- Minikube Docs: https://minikube.sigs.k8s.io/docs/start/
+- Kubernetes Docs: https://kubernetes.io/docs/
 
 Також слід сказати про ризики ліцензування Docker, якщо вони планують використовувати kind або k3d. Docker Desktop Community Edition доступний безкоштовно для особистого використання, але для комерційного використання потрібна платна підписка. AsciiArtify може розглянути альтернативу Docker, наприклад Podman, яка є безкоштовним програмним забезпеченням з відкритим кодом.
