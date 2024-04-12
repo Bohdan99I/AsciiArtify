@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Define command-line arguments
+if [ $# -lt 2 ]; then
+    echo "Usage: $0 <namespace> <resource_type>"
+    exit 1
+fi
+# Retrieve resource usage statistics from Kubernetes
+kubectl get $2 -n $1 --no-headers=true | while read -r line; do
+   # Extract CPU and memory usage from the output
+    name=$(echo "$line" | awk '{print $1}')
+    cpu=$(echo "$line" | awk '{print $2}')
+    memory=$(echo "$line" | awk '{print $3}')
+
+   # Output the statistics to the console
+    echo "$2, $1, $name, $cpu, $memory"
+done
